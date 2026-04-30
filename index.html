@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BSC Mantenimientos</title>
+
+<style>
+:root {
+    --azul: #0b3c6f;
+    --verde: #22c55e;
+    --fondo: #0f172a;
+    --card: #111827;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--fondo);
+    color: #fff;
+}
+
+/* HEADER */
+header {
+    background: #020617;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--verde);
+}
+
+header img {
+    height: 55px;
+}
+
+/* NAV */
+nav a {
+    color: #cbd5f5;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--verde);
+}
+
+/* HERO */
+.hero {
+    height: 85vh;
+    background: linear-gradient(rgba(11,60,111,0.8), rgba(34,197,94,0.4)), url('trabajo3.PNG') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+}
+
+/* BOTÓN */
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 35px;
+    background: var(--verde);
+    color: #000;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* SECCIONES */
+.section {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    color: var(--verde);
+}
+
+/* SERVICIOS */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card {
+    background: var(--card);
+    padding: 30px;
+    border-radius: 12px;
+    width: 250px;
+}
+
+/* GALERÍA */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* TESTIMONIOS */
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial {
+    background: var(--card);
+    padding: 25px;
+    border-radius: 12px;
+    width: 300px;
+    font-style: italic;
+    border-left: 4px solid var(--verde);
+}
+
+.testimonial strong {
+    display: block;
+    margin-top: 10px;
+    color: var(--verde);
+}
+
+/* WHATSAPP */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    background: #020617;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid var(--verde);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.jpg.jpg" alt="BSC Logo">
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#trabajos">Trabajos</a>
+        <a href="#testimonios">Opiniones</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section class="hero" id="inicio">
+    <div>
+        <h1>Cuidamos los espacios que importan</h1>
+        <p>Jardinería profesional para barrios privados y espacios verdes</p>
+        <a href="https://wa.me/5491134199472" class="btn">Solicitar presupuesto</a>
+    </div>
+</section>
+
+<section class="section" id="servicios">
+    <h2>Servicios</h2>
+    <div class="services">
+        <div class="card">Corte de césped</div>
+        <div class="card">Poda y cerco</div>
+        <div class="card">Limpieza de pileta</div>
+        <div class="card">Mantenimiento de barrios</div>
+    </div>
+</section>
+
+<section class="section" id="trabajos">
+    <h2>Trabajos reales</h2>
+    <div class="gallery">
+        <img src="trabajo1.PNG">
+        <img src="trabajo2.PNG">
+        <img src="trabajo3.PNG">
+    </div>
+</section>
+
+<section class="section" id="testimonios">
+    <h2>Opiniones de clientes</h2>
+    <div class="testimonials">
+        <div class="testimonial">
+            “La verdad el trabajo de los chicos es excelente, y muy rápido.”
+            <strong>- Cliente</strong>
+        </div>
+        <div class="testimonial">
+            “Agustín un genio como persona, BSC es genial!”
+            <strong>- Cliente</strong>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="contacto">
+    <h2>Contacto</h2>
+    <p>📞 +54 9 11 3419-9472</p>
+    <p>📧 bcsmantenimientos@gmail.com</p>
+</section>
+
+<footer>
+    <p>© 2026 BSC Mantenimientos</p>
+</footer>
+
+<a href="https://wa.me/5491134199472" class="whatsapp">💬</a>
+
+</body>
+</html>
