@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BSC Mantenimientos</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f172a;
+    color: #fff;
+}
+
+/* HEADER */
+header {
+    background: #020617;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 50px;
+}
+
+nav a {
+    color: #38bdf8;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    padding: 100px 20px;
+    text-align: center;
+    background: linear-gradient(120deg, #0ea5e9, #22c55e);
+}
+
+.hero h1 {
+    font-size: 38px;
+}
+
+/* BOTÓN */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 30px;
+    background: #16a34a;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* SECCIONES */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* SERVICIOS */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: #020617;
+    padding: 25px;
+    border-radius: 12px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* GALERÍA */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* WHATSAPP */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    background: #020617;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.png" alt="BSC Logo">
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#trabajos">Trabajos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section class="hero" id="inicio">
+    <h1>Mantenimiento de espacios verdes</h1>
+    <p>Servicio profesional para barrios privados, empresas y particulares</p>
+    <a href="https://wa.me/5491134199472" class="btn">Solicitar presupuesto</a>
+</section>
+
+<section class="section" id="servicios">
+    <h2>Servicios</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Corte de césped</h3>
+            <p>Mantenimiento regular en espacios verdes</p>
+        </div>
+        <div class="card">
+            <h3>Poda</h3>
+            <p>Poda de árboles y arbustos</p>
+        </div>
+        <div class="card">
+            <h3>Limpieza</h3>
+            <p>Limpieza integral de terrenos</p>
+        </div>
+        <div class="card">
+            <h3>Mantenimiento general</h3>
+            <p>Parques, canchas y áreas comunes</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="trabajos">
+    <h2>Trabajos realizados</h2>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1598514982841-4c0cdb2c7c3d" alt="">
+        <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952" alt="">
+        <img src="https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62" alt="">
+        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="">
+    </div>
+</section>
+
+<section class="section" id="contacto">
+    <h2>Contacto</h2>
+    <p>📍 Buenos Aires</p>
+    <p>📞 +54 9 11 3419-9472</p>
+    <p>📧 bcsmantenimientos@gmail.com</p>
+</section>
+
+<footer>
+    <p>© 2026 BSC Mantenimientos</p>
+</footer>
+
+<a href="https://wa.me/5491134199472" class="whatsapp">💬</a>
+
+</body>
+</html>
