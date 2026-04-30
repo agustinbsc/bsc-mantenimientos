@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BSC Mantenimientos</title>
+
+<style>
+:root {
+    --azul: #0b1f3a;
+    --azul2: #102a4c;
+    --verde: #22c55e;
+    --texto: #e2e8f0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--azul);
+    color: var(--texto);
+}
+
+/* HEADER */
+header {
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    height: 45px;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(11,31,58,0.9));
+}
+
+/* BOTÓN PRO */
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 15px 40px;
+    background: var(--verde);
+    color: black;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px var(--verde);
+}
+
+/* SECCIONES */
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    color: var(--verde);
+}
+
+/* CARDS */
+.cards, .plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.card, .plan {
+    background: var(--azul2);
+    padding: 30px;
+    border-radius: 12px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.card:hover, .plan:hover {
+    transform: translateY(-10px);
+}
+
+/* PLAN PREMIUM */
+.plan.premium {
+    border: 2px solid var(--verde);
+    transform: scale(1.05);
+}
+
+/* IMÁGENES */
+.images-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.images-section img {
+    width: 33.3%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* CTA */
+.cta {
+    background: var(--verde);
+    color: black;
+    padding: 60px 20px;
+}
+
+/* TESTIMONIOS */
+.testimonials {
+    background: #020617;
+    padding: 60px 20px;
+}
+
+/* CONTACTO */
+.contact {
+    background: var(--azul2);
+    padding: 40px;
+    border-radius: 12px;
+    max-width: 400px;
+    margin: auto;
+}
+
+/* WHATSAPP */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 18px;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.whatsapp:hover {
+    transform: scale(1.1);
+}
+
+/* ANIMACIONES */
+.fade {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.fade.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.jpg.jpg">
+</header>
+
+<section class="hero fade">
+    <div>
+        <h1>BSC Mantenimientos</h1>
+        <p>Servicios profesionales en espacios verdes</p>
+        <a href="https://wa.me/5491134199472" class="btn">Solicitar presupuesto</a>
+    </div>
+</section>
+
+<section class="section fade">
+    <h2>Por qué elegirnos</h2>
+    <div class="cards">
+        <div class="card">✔ Factura A</div>
+        <div class="card">🛡 Seguros al día</div>
+        <div class="card">👷 Personal capacitado</div>
+        <div class="card">⚡ Servicio profesional</div>
+    </div>
+</section>
+
+<section class="images-section fade">
+    <img src="trabajo1.jpg.PNG">
+    <img src="trabajo2.jpg.PNG">
+    <img src="trabajo3.jpg.PNG">
+</section>
+
+<section class="section fade">
+    <h2>Planes</h2>
+    <div class="plans">
+
+        <div class="plan">
+            <h3>Básico</h3>
+            <p>Corte de césped</p>
+            <p>Limpieza</p>
+            <p>Mantenimiento verde</p>
+        </div>
+
+        <div class="plan premium">
+            <h3>Premium</h3>
+            <p>Corte + poda</p>
+            <p>Mantenimiento pileta</p>
+            <p>Servicio completo</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="cta fade">
+    <h2>Solicitá tu presupuesto hoy</h2>
+    <a href="https://wa.me/5491134199472" class="btn">Contactar</a>
+</section>
+
+<section class="testimonials fade">
+    <p>“Excelente servicio, muy rápido.”</p>
+    <p>“BSC es genial!”</p>
+</section>
+
+<section class="section fade">
+    <div class="contact">
+        <h2>Contacto</h2>
+        <p>📞 +54 9 11 3419-9472</p>
+        <p>📧 bcsmantenimientos@gmail.com</p>
+    </div>
+</section>
+
+<a href="https://wa.me/5491134199472" class="whatsapp">💬</a>
+
+<script>
+const elements = document.querySelectorAll('.fade');
+
+window.addEventListener('scroll', () => {
+    elements.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if (top < window.innerHeight - 100) {
+            el.classList.add('show');
+        }
+    });
+});
+</script>
+
+</body>
+</html>
