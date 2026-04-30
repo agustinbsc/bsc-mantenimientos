@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BSC Mantenimientos</title>
+
+<style>
+:root {
+    --azul: #0b1f3a;
+    --azul2: #102a4c;
+    --verde: #22c55e;
+    --texto: #e2e8f0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--azul);
+    color: var(--texto);
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(0,0,0,0.7);
+}
+
+header img {
+    height: 45px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #cbd5f5;
+}
+
+nav a:hover {
+    color: var(--verde);
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 120px 20px 80px;
+}
+
+.hero h1 {
+    font-size: 48px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 35px;
+    background: var(--verde);
+    color: black;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+/* SECCIONES */
+.section {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    color: var(--verde);
+}
+
+/* PRESENTACIÓN */
+.about {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+    background: var(--azul2);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* IMÁGENES (CORREGIDO) */
+.images-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.images-grid img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    background: #0b1f3a;
+    border-radius: 10px;
+}
+
+/* PLANES */
+.plans {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.plan {
+    background: var(--azul2);
+    padding: 30px;
+    border-radius: 12px;
+    width: 300px;
+    text-align: left;
+}
+
+.plan.premium {
+    border: 2px solid var(--verde);
+}
+
+.plan h3 {
+    color: var(--verde);
+}
+
+/* CONTACTO */
+.contact {
+    background: var(--azul2);
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: auto;
+}
+
+/* WHATSAPP */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 18px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="logo.jpg.jpg">
+    <nav>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#planes">Planes</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>BSC Mantenimientos</h1>
+    <p>Servicios profesionales en mantenimiento de espacios verdes en toda la provincia de Buenos Aires</p>
+    <a href="https://wa.me/5491134199472" class="btn">Solicitar presupuesto</a>
+</section>
+
+<!-- PRESENTACIÓN -->
+<section class="section" id="nosotros">
+    <h2>Sobre nosotros</h2>
+    <div class="about">
+
+        <p><strong>BSC Mantenimientos</strong> es una empresa dedicada al mantenimiento integral de espacios verdes, brindando servicios profesionales en toda la provincia de Buenos Aires.</p>
+
+        <p>Trabajamos con una amplia variedad de clientes, incluyendo barrios privados, parques industriales, empresas, espacios públicos y viviendas particulares.</p>
+
+        <p>Nos especializamos en el cuidado de jardines, parques y áreas comunes, garantizando un servicio prolijo y eficiente.</p>
+
+        <ul>
+            <li>✔ Emisión de factura A</li>
+            <li>✔ ART y seguros al día</li>
+            <li>✔ Personal capacitado</li>
+        </ul>
+
+        <p>Brindamos soluciones confiables adaptadas a cada cliente.</p>
+
+    </div>
+</section>
+
+<!-- IMÁGENES -->
+<section class="images-grid">
+    <img src="trabajo1.jpg.PNG">
+    <img src="trabajo2.jpg.PNG">
+    <img src="trabajo3.jpg.PNG">
+</section>
+
+<!-- PLANES -->
+<section class="section" id="planes">
+    <h2>Planes de servicio</h2>
+
+    <div class="plans">
+
+        <div class="plan">
+            <h3>Básico</h3>
+            <ul>
+                <li>Corte de césped</li>
+                <li>Poda básica</li>
+                <li>Limpieza de áreas verdes</li>
+                <li>Recolección de residuos</li>
+                <li>Visitas programadas</li>
+            </ul>
+        </div>
+
+        <div class="plan premium">
+            <h3>Premium</h3>
+            <ul>
+                <li>Corte y poda completa</li>
+                <li>Mantenimiento de pileta</li>
+                <li>Limpieza integral</li>
+                <li>Atención prioritaria</li>
+                <li>Servicio completo</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="section" id="contacto">
+    <div class="contact">
+        <h2>Contacto</h2>
+        <p>📞 +54 9 11 3419-9472</p>
+        <p>📧 bcsmantenimientos@gmail.com</p>
+    </div>
+</section>
+
+<a href="https://wa.me/5491134199472" class="whatsapp">💬</a>
+
+</body>
+</html>
